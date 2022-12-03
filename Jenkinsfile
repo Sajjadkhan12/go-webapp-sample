@@ -18,6 +18,7 @@ pipeline {
            steps {
                 script{
                     image = docker.build("sajjadkhan212/go-webapp-sample")
+                  sh "docker run -p 8090:8000 -d sajjadkhan212/go-webapp-sample"
              }
        }
      }
