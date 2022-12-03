@@ -5,7 +5,7 @@ pipeline {
     }
   tools {
     go '1.19.3'
-  
+  }
   stages {
     stage('dev') {
       steps {
