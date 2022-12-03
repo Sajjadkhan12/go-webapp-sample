@@ -1,5 +1,9 @@
 pipeline {
   agent any
+  environment {
+        Go111MODULE='on'
+    }
+  
   stages {
     stage('dev') {
       steps {
