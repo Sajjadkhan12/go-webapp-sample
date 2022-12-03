@@ -3,6 +3,8 @@ pipeline {
   environment {
         Go111MODULE='on'
     }
+  tools {
+    go '1.19.3'
   
   stages {
     stage('dev') {
